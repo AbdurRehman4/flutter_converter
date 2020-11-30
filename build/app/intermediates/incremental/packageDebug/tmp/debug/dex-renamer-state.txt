@@ -1,0 +1,4 @@
+#Fri Nov 27 11:29:21 PKT 2020
+base.0=/home/abdurrehman/AndroidStudioProjects/Flutter/converter/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
