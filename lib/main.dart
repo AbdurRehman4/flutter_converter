@@ -87,6 +87,13 @@ class _HomePageState extends State<HomePage> {
       if (res % 1 == 0){
         res = res.toInt();
       }
+    }
+      else if (option_1=="Fahrenheit"&& option_2=="Kelvin"){
+        res = ((double.parse(input)-32)*5/9)+273;
+        if (res % 1 == 0){
+          res = res.toInt();
+        }
+      
       setState(() {
         output.text = res.toString();
       });
