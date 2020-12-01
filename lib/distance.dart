@@ -112,7 +112,7 @@ class _TemperaturePageState extends State<TemperaturePage> {
             TabItem(icon: CupertinoIcons.question_circle_fill, title: 'About'),
           ],
           initialActiveIndex: 1,//optional, default as 0
-          onTap: (int i) => (){
+          onTap: (int i){
             print(i);
             if (i == 0){
               print("Changed!");
