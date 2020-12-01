@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:Converter/main.dart';
+import 'package:Converter/main.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -110,10 +112,12 @@ class _TemperaturePageState extends State<TemperaturePage> {
             TabItem(icon: CupertinoIcons.question_circle_fill, title: 'About'),
           ],
           initialActiveIndex: 1,//optional, default as 0
-          onTap: (int i) => (){
+          onTap: (int i){
             print(i);
-            if (i == 0){Navigator.push(context, MaterialPageRoute(
-                builder: (BuildContext context) => TempApp()
+            if (i == 0){
+              print("Changed!");
+              Navigator.push(context, MaterialPageRoute(
+                builder: (BuildContext context) => MyApp()
             ));}
           },
         ),
